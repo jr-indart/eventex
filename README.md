@@ -3,7 +3,6 @@
 Sistema de Eventos encomendado pela Morena.
 
 [![Build Status](https://travis-ci.org/jr-indart/eventex.svg?branch=master)](https://travis-ci.org/jr-indart/eventex)
-
 [![Code Health](https://landscape.io/github/jr-indart/eventex/master/landscape.svg?style=flat)](https://landscape.io/github/jr-indart/eventex/master)
 
 ## Como desenvolver?
