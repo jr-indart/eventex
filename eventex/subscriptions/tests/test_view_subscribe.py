@@ -31,12 +31,10 @@ class SubscribeGet(TestCase):
         """Html must contain csrf"""
         self.assertContains(self.resp, 'csrfmiddlewaretoken')
 
-    def test_has_from(self):
+    def test_has_form(self):
         """Context must have subscription form"""
         form = self.resp.context['form']
         self.assertIsInstance(form, SubscriptionForm)
-
-
 
 
 class SubscribePostValid(TestCase):
@@ -49,7 +47,7 @@ class SubscribePostValid(TestCase):
         """Valid POST should redirect to /inscricao/"""
         self.assertEqual(302, self.resp.status_code)
 
-    def test_send_subscrive_email(self):
+    def test_send_subscribe_email(self):
         self.assertEqual(1, len(mail.outbox))
 
 
@@ -80,7 +78,7 @@ class SubscribeSuccessMessage(TestCase):
                     email='juniorindart@hotmail.com', phone='67077249814')
 
         response = self.client.post('/inscricao/', data, follow=True)
-        self.assertContains(response,  'Inscrição realizada com sucesso!')
+        self.assertContains(response, 'Inscrição realizada com sucesso!')
 
 
 

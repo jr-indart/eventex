@@ -10,7 +10,7 @@ CPF: {{ cpf }}
 Email: {{ email }}
 Telefone: {{ phone }}
 
-Em até 48 horas úteis, a nossa equipoe entrará
+Em até 48 horas úteis, a nossa equipe entrará
 em contato com você para concluirmos a sua
 matrícula.
 
