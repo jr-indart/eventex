@@ -18,7 +18,7 @@ git clone git@github.com:jr-indart/eventex.git wttd
 cd wttd
 python -m venv .wttd
 source .wttd/bin/activate
-pip install -r requirements-dev.txt
+pip install -r requirements.txt
 cp contrib/evn-sample .env
 python manage.py test
 ```
