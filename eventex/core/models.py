@@ -1,6 +1,5 @@
 from django.db import models
 from django.shortcuts import resolve_url as r
-from django_extensions import settings
 
 
 class Speaker(models.Model):
